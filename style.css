@@ -1,0 +1,82 @@
+.head {
+	position : fixed;
+	width    : calc(100% - 15px);
+	top      : 5px;
+}
+.logotip {
+	float      : left;
+	margin-top : 5px;
+}
+#logotip {
+	width  : 300px;
+	height : 100px;
+}
+.top-right {
+	float   : right;
+	display : inline-block;
+}
+.link li {
+	margin  : 5px;
+	display : inline-block;
+}
+a:hover {
+	color : #000000 !important;
+}
+a:visited {
+	color : #D3D3D3;
+}
+.search-form {
+	float : right;
+}
+.search-button {
+	margin-left : -5px;
+}
+.post-form {
+	width  : 400px;
+	margin : 110px auto 0;
+}
+.post-form-other {
+	width  : 400px;
+	margin : 50px auto;
+}
+.avatarka {
+	float : left;
+}
+#avatarka {
+	width  : 40px;
+	height : 40px;
+	border : solid grey 1px;
+}
+.username-last-seen-block {
+	margin-left : 55px;
+}
+.username {
+	font-family : Georgia;
+	font-size   : 150%;
+}
+.time_last_seen {
+	font-size : 75%;
+	color     : grey;
+}
+#photo {
+	width      : 400px;
+	height     : 250px;
+	border     : solid grey 1px;
+	margin-top : 5px;
+}
+#heart {
+	width  : 40px;
+	height : 40px;
+}
+.like {
+	font-family : Calibry;
+	font-size   : 200%;
+	margin-top  : -40px;
+	margin-left : 50px;
+}
+.hashtag {
+	margin : 5px;
+}
+#pechalko{
+	margin : 150px 0;
+}
