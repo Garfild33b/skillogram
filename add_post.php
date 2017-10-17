@@ -4,7 +4,7 @@
 
 ?>
 <div class="add-post">
-	<form action="index.php" method="get">
+	<form action="index.php" method="post" enctype="multipart/form-date">
 		<div>
 			<span>Введите логин: </span>
 			<input type="text" name="username" placeholder="Введите имя пользователя" autofocus class="username-add-post">
