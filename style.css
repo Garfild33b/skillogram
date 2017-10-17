@@ -78,6 +78,10 @@ a:visited {
 .hashtag {
 	margin : 5px;
 }
+.nothing-found {
+	width  : 400px;
+	margin : 130px auto 0;
+}
 
 /*Стили для pechalko.php*/
 .post-pechalko {

@@ -54,6 +54,8 @@ $data_base = [
 
 ];
 
+$count=0;
+
 foreach ($data_base as $key => $post) {
 
 	if (!empty($_REQUEST['search']) &&
@@ -61,10 +63,7 @@ foreach ($data_base as $key => $post) {
 		&&
 		strpos($post['comment'], $_REQUEST['search']) === false) {
 			continue;
-	} 
-		if ($post==0) {
-			echo 'пиздец';
-	}
+	} else {$count + 1;}
 ?>
 
 	<div class="post-form">
@@ -100,6 +99,18 @@ foreach ($data_base as $key => $post) {
 
 <?php
 }
+
+if ($count==0) { ?>
+
+<div class="nothing-found">
+	<?php echo 'ничего не найдено';?> <img src="images\pechalko.jpg">
+</div>
+
+<?php
+
+} ?>
+
+<?php
 
 require ('footer.php');
 
