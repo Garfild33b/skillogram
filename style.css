@@ -1,3 +1,5 @@
+/*Стили для header.php*/
+
 .head {
 	position : fixed;
 	width    : calc(100% - 15px);
@@ -31,13 +33,12 @@ a:visited {
 .search-button {
 	margin-left : -5px;
 }
+
+/*Стили для index.php*/
+
 .post-form {
 	width  : 400px;
-	margin : 110px auto 0;
-}
-.post-form-other {
-	width  : 400px;
-	margin : 50px auto;
+	margin : 130px auto 0;
 }
 .avatarka {
 	float : left;
@@ -77,6 +78,47 @@ a:visited {
 .hashtag {
 	margin : 5px;
 }
-#pechalko{
-	margin : 150px 0;
+
+/*Стили для pechalko.php*/
+.post-pechalko {
+	width  : 400px;
+	margin : 130px auto 0;
+}
+.text-pechalko {
+	font-size: 250%;
+
+}
+#image-pechalko {
+	width : 100%;
+}
+
+/*Стили для add_post.php*/
+
+.add-post {
+	width  : 400px;
+	margin : 130px auto 0;
+}
+.username-add-post {
+	width       : 228px;
+	margin-left : 57px;
+}
+.add-photo-button input[type="file"] {
+	display : none;
+}
+.add-photo-button-visiable {
+	width        : 231px;
+	display      : inline-block;
+	border       : solid grey 1px;
+	margin-right : 2px;
+	margin-top   : 1px;
+}
+.add-photo-comment {
+	width  : 228px;
+}
+.button-add-new-post {
+	height: 30px;
+	width: 395px;
+	border: solid grey 1px;
+	background-color: limegreen;
+	text-align: center;
 }

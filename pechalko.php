@@ -1,20 +1,19 @@
-<html>
-<head>
-	<title> index </title>
-</head>
-<body>
 <?php
 
  require ('header.php');
 
 ?>
-	<img src="images\pechalko.jpg" id="pechalko">
+<div class="post-pechalko">
+	<div class="text-pechalko">
+		Все пропало.
+	</div>
+	<div>
+	<img src="images\pechalko.jpg" id="image-pechalko">
+	</div>
+</div>
 
 <?php
 
  require ('footer.php');
 
 ?>
-
-</body>
-</html>

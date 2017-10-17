@@ -7,30 +7,36 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="head">
+	<?php date_default_timezone_set ('UTC');
+
+	$now = time();
+
+	$now_moscow_time = time() + 60*60*3;
+	?>
+	<header class="head">
 		<div class="logotip">
-			<img src="images\logotip.jpg" id="logotip" alt="skilogram">
+			<a href=index.php> <img src="images\logotip.jpg" id="logotip" alt="skilogram"> </a>
 		</div>
 		<div class="top-right">
 			<div>
 				<ol class="link">
 					<li>
-						<a href="pechalko.php"> Лента </a>
+						<a href="add_post.php"> Добавить пост </a>
 					</li>
 					<li>
-						<a href="pechalko.php"> Добавить запись </a>
+						<a href="about_project.php"> О проекте </a>
 					</li>
 					<li>
-						<a href="pechalko.php"> О проекте </a>
+						<a href="contacts.php"> Контакты </a>
 					</li>
 				</ol>
 			</div>
 			<div class="search-form" spellcheck="true">
-				<form action="index.html">
+				<form>
 					<input type="search" name="search" placeholder="Поиск...">
 					<input type="submit" value="Ок" class="search-button">
 				</form>
 			</div>
 		</div>
-	</div>
+	</header>
 	<!--The-end-of-the-top-->

@@ -1,8 +1,8 @@
 <hr/>
-	<span> Copyright </span>	
+	<span> Текущее время: </span>	
 	<?php
-
-	echo date ('Y')
+	
+	echo date ('H:i:s', $now_moscow_time);
 
 	?>
 </body>
