@@ -63,7 +63,7 @@ foreach ($data_base as $key => $post) {
 		&&
 		strpos($post['comment'], $_REQUEST['search']) === false) {
 			continue;
-	} else {$count + 1;}
+	} else {$count=$count + 1;}
 ?>
 
 	<div class="post-form">

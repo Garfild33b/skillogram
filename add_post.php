@@ -4,7 +4,7 @@
 
 ?>
 <div class="add-post">
-	<form>
+	<form action="index.php" method="get">
 		<div>
 			<span>Введите логин: </span>
 			<input type="text" name="username" placeholder="Введите имя пользователя" autofocus class="username-add-post">
@@ -25,7 +25,7 @@
 			<input type="text" name="comment" placeholder="Введите комментарий" class="add-photo-comment">
 		</div>
 		<div>
-			<input type="image" name="send-data-new-post" value="Добавить пост" class="button-add-new-post">
+			<input type="submit" name="send-data-new-post" value="Добавить пост" class="button-add-new-post">
 		</div>
 	</form>
 </div>

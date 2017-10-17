@@ -5,7 +5,7 @@
 	width    : calc(100% - 15px);
 	top      : 5px;
 }
-.logotip {
+.head .logotip {
 	float      : left;
 	margin-top : 5px;
 }
@@ -109,12 +109,17 @@ a:visited {
 .add-photo-button input[type="file"] {
 	display : none;
 }
+.choose-file {
+	width : 156px;
+}
 .add-photo-button-visiable {
-	width        : 231px;
-	display      : inline-block;
-	border       : solid grey 1px;
-	margin-right : 2px;
-	margin-top   : 1px;
+	width                  : 231px;
+	display                : inline-block;
+	border                 : solid lightgrey 0.5px;
+	margin-right           : 2px;
+	margin-top             : 1px;
+	-webkit-text-fill-color: grey;
+
 }
 .add-photo-comment {
 	width  : 228px;
