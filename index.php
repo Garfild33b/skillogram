@@ -2,8 +2,6 @@
 
 require ('header.php');
 
-define('HEART', '<img src="images\heart.jpg" id="heart" alt="heart">');
-
 $data_base = [
 
 	'ZvezdaUtuba' => [
@@ -54,16 +52,17 @@ $data_base = [
 
 ];
 
-$count=0;
+$count = 0;
 
-foreach ($data_base as $key => $post) {
+foreach ($data_base as $key => $post):
 
 	if (!empty($_REQUEST['search']) &&
 		strpos($post['username'], $_REQUEST['search']) === false
 		&&
 		strpos($post['comment'], $_REQUEST['search']) === false) {
 			continue;
-	} else {$count=$count + 1;}
+	} else {$count = $count + 1;
+		}
 ?>
 
 	<div class="post-form">
@@ -82,36 +81,33 @@ foreach ($data_base as $key => $post) {
 			<img src="images\<?php echo $post['photo'] ?>" id="photo" alt="photo">
 		</div>
 		<div>
-			<?php echo HEART ?>
+			<img src="images\heart.jpg" id="heart" alt="heart">
 		</div>
 		<div class="like">
 			<?php echo $post['likes_counter'] ?>
 		</div>
 		<div>
 			<?php echo $post['comment'] ?>
-			<a href="<?php echo $post['hashtag'] [0]?>" class="hashtag"> #еда </a>
-			<a href="<?php echo $post['hashtag'] [1]?>" class="hashtag"> #жизнь </a>
-			<a href="<?php echo $post['hashtag'] [2]?>" class="hashtag"> #доволен </a>
+			<a href="<?php echo $post['hashtag'][0]?>" class="hashtag"> #еда </a>
+			<a href="<?php echo $post['hashtag'][1]?>" class="hashtag"> #жизнь </a>
+			<a href="<?php echo $post['hashtag'][2]?>" class="hashtag"> #доволен </a>
 		</div>
 	</div>
 
 	<!--The-end-of-block-->	
 
 <?php
-}
 
-if ($count==0) { ?>
+endforeach;
+
+if ($count==0): ?>
 
 <div class="nothing-found">
-	<?php echo 'ничего не найдено';?> <img src="images\pechalko.jpg">
+	<span> ничего не найдено </span>
+	<img src="images\pechalko.jpg">
 </div>
 
 <?php
 
-} ?>
-
-<?php
-
+endif;
 require ('footer.php');
-
-?>

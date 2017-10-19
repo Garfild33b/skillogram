@@ -7,11 +7,11 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<?php date_default_timezone_set ('UTC');
+	<?php
 
-	$now = time();
+	date_default_timezone_set('Europe/Moscow');
 
-	$now_moscow_time = time() + 60*60*3;
+	$now_moscow_time = date_default_timezone_set('Europe/Moscow');
 	?>
 	<header class="head">
 		<div class="logotip">
