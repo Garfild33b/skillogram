@@ -13,7 +13,11 @@
 			<div class="add-photo-button">
 				<label>
 					<input type="file" name="URL-to-photo-hidden">
-					<input type="text" name="URL-to-photo-visiable" placeholder="<?php echo @$_GET['URL-to-photo-hidden']; ?>" class="choose-file" disabled>
+					<input type="text" name="URL-to-photo-visiable" placeholder="<?php 
+					if (!isset($_GET['URL-to-photo-hidden'])) {
+						echo "";
+					} else
+					echo $_GET['URL-to-photo-hidden']; ?>" class="choose-file" disabled>
 					<div class="add-photo-button-visiable">
 						<span> Добавить фотографию </span>
 					</div>
